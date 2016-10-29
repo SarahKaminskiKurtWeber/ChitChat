@@ -1,0 +1,26 @@
+﻿@model ChitChatter.Models.ChitChat
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChitChat</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ChitChatText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChitChatText)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ChitChatID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
