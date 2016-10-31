@@ -89,3 +89,6 @@ textarea {
 .jumbotron {
     background-color:white;
 }
+.navbar-inverse .navbar-nav > li > a {
+    color: aqua;
+}
