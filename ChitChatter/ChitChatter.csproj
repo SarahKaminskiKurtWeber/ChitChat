@@ -202,25 +202,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610291404557_InitialCreate.cs" />
-    <Compile Include="Migrations\201610291404557_InitialCreate.Designer.cs">
-      <DependentUpon>201610291404557_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610291500416_Added chitchat.cs" />
-    <Compile Include="Migrations\201610291500416_Added chitchat.Designer.cs">
-      <DependentUpon>201610291500416_Added chitchat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610311306578_SwitchIdToString.cs" />
-    <Compile Include="Migrations\201610311306578_SwitchIdToString.Designer.cs">
-      <DependentUpon>201610311306578_SwitchIdToString.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610311316419_TryingAgain.cs" />
-    <Compile Include="Migrations\201610311316419_TryingAgain.Designer.cs">
-      <DependentUpon>201610311316419_TryingAgain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610311513452_Final.cs" />
-    <Compile Include="Migrations\201610311513452_Final.Designer.cs">
-      <DependentUpon>201610311513452_Final.cs</DependentUpon>
+    <Compile Include="Migrations\201610311550023_LaptopFix.cs" />
+    <Compile Include="Migrations\201610311550023_LaptopFix.Designer.cs">
+      <DependentUpon>201610311550023_LaptopFix.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -308,20 +292,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610291404557_InitialCreate.resx">
-      <DependentUpon>201610291404557_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610291500416_Added chitchat.resx">
-      <DependentUpon>201610291500416_Added chitchat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610311306578_SwitchIdToString.resx">
-      <DependentUpon>201610311306578_SwitchIdToString.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610311316419_TryingAgain.resx">
-      <DependentUpon>201610311316419_TryingAgain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610311513452_Final.resx">
-      <DependentUpon>201610311513452_Final.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610311550023_LaptopFix.resx">
+      <DependentUpon>201610311550023_LaptopFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

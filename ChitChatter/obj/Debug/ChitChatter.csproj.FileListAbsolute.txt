@@ -163,11 +163,7 @@ C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.csprojResolveAssemblyReference.cache
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.Migrations.InitialCreate.resources
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.Migrations.Addedchitchat.resources
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.csproj.GenerateResource.Cache
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.dll
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.pdb
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.Migrations.SwitchIdToString.resources
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.Migrations.TryingAgain.resources
-C:\Users\WeCanCodeIT\Documents\visual studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.Migrations.Final.resources
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.Migrations.LaptopFix.resources
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\ChitChat\ChitChatter\obj\Debug\ChitChatter.csproj.GenerateResource.Cache

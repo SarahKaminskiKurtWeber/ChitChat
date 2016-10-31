@@ -1,13 +1,54 @@
-﻿using System.Web;
+﻿using System;
+using System.Web;
 using System.Web.Mvc;
+
+using RequireHttpsAttributeBase = System.Web.Mvc.RequireHttpsAttribute;
 
 namespace ChitChatter
 {
-    public class FilterConfig
+
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = false)]
+    public class RequireHttpsAttribute : RequireHttpsAttributeBase
     {
-        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        public override void OnAuthorization(AuthorizationContext filterContext)
         {
-            filters.Add(new HandleErrorAttribute());
+            if (filterContext == null)
+            {
+                throw new ArgumentNullException("filterContext");
+            }
+
+            if (filterContext.HttpContext.Request.IsSecureConnection)
+            {
+                return;
+            }
+
+            if (string.Equals(filterContext.HttpContext.Request.Headers["X-Forwarded-Proto"],
+                "https",
+                StringComparison.InvariantCultureIgnoreCase))
+            {
+                return;
+            }
+
+            if (filterContext.HttpContext.Request.IsLocal)
+            {
+                return;
+            }
+
+            HandleNonHttpsRequest(filterContext);
         }
     }
 }
+
+//using System.Web;
+//using System.Web.Mvc;
+
+//namespace ChitChatter
+//{
+//    public class FilterConfig
+//    {
+//        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+//        {
+//            filters.Add(new HandleErrorAttribute());
+//        }
+//    }
+//}
