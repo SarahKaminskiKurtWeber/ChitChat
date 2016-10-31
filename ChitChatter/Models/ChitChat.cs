@@ -13,5 +13,9 @@ namespace ChitChatter.Models
         [Key]
         public int ChitChatID { get; set; }
         public string ChitChatText { get; set; }
+
+        [ForeignKey("ApplicationUser")]
+        public string Id { get; set; }
+        public virtual ApplicationUser ApplicationUser { get; set; }
     }
 }

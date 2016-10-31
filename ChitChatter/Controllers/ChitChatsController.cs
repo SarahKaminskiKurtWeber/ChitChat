@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ChitChatter.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace ChitChatter.Controllers
 {
@@ -46,10 +48,15 @@ namespace ChitChatter.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ChitChatID,ChitChatText")] ChitChat chitChat)
+        public ActionResult Create([Bind(Include = "ChitChatID,ChitChatText,Id")] ChitChat chitChat)
         {
             if (ModelState.IsValid)
             {
+                //Added by Valerie to get Curretn User
+                UserManager<ApplicationUser> UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
+                ApplicationUser currentUser = UserManager.FindById(User.Identity.GetUserId());
+                chitChat.ApplicationUser = currentUser;
+
                 db.ChitChats.Add(chitChat);
                 db.SaveChanges();
                 return RedirectToAction("Index");

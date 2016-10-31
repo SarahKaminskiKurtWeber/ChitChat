@@ -210,6 +210,14 @@
     <Compile Include="Migrations\201610291500416_Added chitchat.Designer.cs">
       <DependentUpon>201610291500416_Added chitchat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610311306578_SwitchIdToString.cs" />
+    <Compile Include="Migrations\201610311306578_SwitchIdToString.Designer.cs">
+      <DependentUpon>201610311306578_SwitchIdToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610311316419_TryingAgain.cs" />
+    <Compile Include="Migrations\201610311316419_TryingAgain.Designer.cs">
+      <DependentUpon>201610311316419_TryingAgain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ChitChat.cs" />
@@ -301,6 +309,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610291500416_Added chitchat.resx">
       <DependentUpon>201610291500416_Added chitchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610311306578_SwitchIdToString.resx">
+      <DependentUpon>201610311306578_SwitchIdToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610311316419_TryingAgain.resx">
+      <DependentUpon>201610311316419_TryingAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

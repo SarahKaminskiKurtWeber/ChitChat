@@ -4,10 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Post Details</h2>
 
 <div>
-    <h4>ChitChat</h4>
+    @*<h4>ChitChat</h4>*@
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -22,5 +22,5 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ChitChatID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to Current Posts", "Index")
 </p>

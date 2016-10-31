@@ -22,3 +22,27 @@ select,
 textarea {
     max-width: 280px;
 }
+/*WeCabCodeIT logo colors*/
+#spanOne {
+    /*We*/
+    color: #d8005c;
+}
+#spanTwo {
+    /*Can*/
+    color: #50B735;
+}
+#spanThree {
+    /*{Code}*/
+    color: #429fd7;
+}
+#spanFour {
+    /*IT*/
+    color: #f15d00;
+}
+/*Font change in footer*/
+#fontChange {
+     font-family: Century Gothic;
+}
+#dateRight {
+    margin:15px;
+    float: right;

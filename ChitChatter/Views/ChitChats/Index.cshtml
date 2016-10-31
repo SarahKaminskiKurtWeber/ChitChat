@@ -4,28 +4,34 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Current ChitChats</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Post ChitChat", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ChitChatText)
+            @Html.DisplayNameFor(model => model.ApplicationUser)
         </th>
-        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChitChatText)
+        </th>        
     </tr>
     
     
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ChitChatText)
+            @Html.DisplayFor(modelItem => item.ApplicationUser.UserName)
+        </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ChitChatID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ChitChatID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ChitChatID })
+            @Html.DisplayFor(modelItem => item.ChitChatText)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ChitChatID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ChitChatID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ChitChatID })
         </td>
     </tr>
 }
