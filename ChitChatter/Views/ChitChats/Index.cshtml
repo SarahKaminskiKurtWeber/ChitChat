@@ -4,36 +4,59 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Current ChitChats</h2>
+<h2 id="header1">Current ChitChats</h2>
 
 <p>
     @Html.ActionLink("Post ChitChat", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ApplicationUser)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ChitChatText)
-        </th>        
-    </tr>
+<div class="row" >
+    @*<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicationUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChitChatText)
+            </th>*@
     
-    
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ApplicationUser.UserName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChitChatText)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.ChitChatID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.ChitChatID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.ChitChatID })
-        </td>
-    </tr>
-}
 
-</table>
+
+    @foreach (var item in Model)
+    {
+
+        <div class="col-sm-12 col-md-12 col-lg-12" id="chatters">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h6 id="username"> @Html.DisplayFor(modelItem => item.ApplicationUser.UserName)</h6>
+                    <h3 id="chitty">@Html.DisplayFor(modelItem => item.ChitChatText)</h3>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ChitChatID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ChitChatID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ChitChatID })
+                    </p>
+                    @*><a href="#" class="btn btn-primary" role="button">Button</a>*@
+                </div>
+            </div>
+        </div>
+
+    }
+
+
+
+        @*<tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApplicationUser.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChitChatText)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ChitChatID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ChitChatID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ChitChatID })
+                    </td>
+                </tr>
+            }
+
+            </table>*@
+    </div>

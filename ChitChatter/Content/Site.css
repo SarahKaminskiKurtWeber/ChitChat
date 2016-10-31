@@ -1,12 +1,49 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:black;
+    color:black;
+    font-family: 'Coiny', cursive;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    background-color:white;
+    font-family: 'Coiny', cursive;
+}
+#header1 {
+    color:black;
+    background-color:white;
+    font-family: 'Coiny', cursive;
+    text-align:left;
+}
+#chatters{
+    color:black;
+    /*background-color:white;*/
+    font-family: 'Coiny', cursive;
+    text-align:left;
+    padding:25px;
+}
+#chitty {
+    color:black;
+    /*background-color:white;*/
+    font-family: 'Coiny', cursive;
+    text-align:center;
+}
+#username{
+    color:black;
+    font-family: 'Coiny', cursive;
+    text-align:left;
+}
+.thumbnail {
+    padding:25px;
+    background-color:aqua;
+}
+
+.navbar-inverse .navbar-brand {
+    color: aqua;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -41,8 +78,14 @@ textarea {
 }
 /*Font change in footer*/
 #fontChange {
-     font-family: Century Gothic;
+    
+    font-family: 'Coiny', cursive;
 }
 #dateRight {
-    margin:15px;
+    margin: 15px;
     float: right;
+}
+/*Chnage Jumbotron background to white*/
+.jumbotron {
+    background-color:white;
+}
