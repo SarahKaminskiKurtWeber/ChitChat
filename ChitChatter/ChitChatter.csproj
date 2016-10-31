@@ -218,6 +218,10 @@
     <Compile Include="Migrations\201610311316419_TryingAgain.Designer.cs">
       <DependentUpon>201610311316419_TryingAgain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610311513452_Final.cs" />
+    <Compile Include="Migrations\201610311513452_Final.Designer.cs">
+      <DependentUpon>201610311513452_Final.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ChitChat.cs" />
@@ -315,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610311316419_TryingAgain.resx">
       <DependentUpon>201610311316419_TryingAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610311513452_Final.resx">
+      <DependentUpon>201610311513452_Final.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
